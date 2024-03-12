@@ -8,7 +8,7 @@ const leagueSpartan = League_Spartan({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <main className={`${leagueSpartan.className} invoice-dark-bg min-h-screen bg-invoice-light dark:bg-invoice-dark`}>
-    <Component {...pageProps} />;
+  return <main className={`${leagueSpartan.className}  min-h-screen bg-invoice-light dark:bg-invoice-dark`}>
+    <Component {...pageProps} />
   </main>
 }
