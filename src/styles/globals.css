@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.react-datepicker__day--selected {
+  background-color: white !important;
+  color: #7C5DFA  !important;
+}
