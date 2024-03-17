@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext } from "react";
 
 import Image from "next/image";
-import Avatar from "@/assets/image-avatar.jpg";
 
+import Avatar from "@/assets/image-avatar.jpg";
 import Logo from "@/assets/logo.svg";
 import Icon from "@/assets/icon-sun.svg";
 import Moon from "@/assets/icon-moon.svg";
+
+import { ThemeContext } from "@/context/themeContext";
 
 function LogoComponent() {
   return (
@@ -17,10 +19,10 @@ function LogoComponent() {
 }
 
 function Themes() {
-  const [theme, setTheme] = useState("light");
+  const { changeTheme, theme } = useContext(ThemeContext);
 
   const handleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    changeTheme(theme === "light" ? "dark" : "light")
   };
 
   return ( 
