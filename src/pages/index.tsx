@@ -1,7 +1,7 @@
-import { Button } from "@/components/Button";
+import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <Button>Hello World</Button>
+    <Navbar></Navbar>
   )
 }
