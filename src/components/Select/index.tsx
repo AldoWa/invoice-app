@@ -19,7 +19,7 @@ const optionStyles = {
   selected: "text-invoice-01 dark:text-invoice-02",
 };
 
-const valueContainerStyles = "pt-[18px] pb-[15px] px-5 ";
+const valueContainerStyles = "pt-[18px] pb-[15px] px-5 flex gap-2";
 
 const dropdownIndicatorStyles =
   "px-5 text-invoice-01 rounded-md hover:text-black";
