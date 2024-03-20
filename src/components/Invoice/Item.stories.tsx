@@ -16,7 +16,7 @@ const meta = {
     backgrounds: { default: 'dark' },
     docs: {
       description: {
-        component: 'A input component with light/dark mode.',
+        component: 'Invoice item component.',
       }
     }
   },

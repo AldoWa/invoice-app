@@ -9,7 +9,7 @@ const meta = {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: 'A select component with light/dark mode.',
+        component: 'Navbar component.',
       }
     }
   },
@@ -18,6 +18,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof Navbar>;
 
-export const Nav: Story = {
+export const Default: Story = {
   render: () => <div className='min-h-screen'><Navbar /></div>
 };

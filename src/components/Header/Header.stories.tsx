@@ -9,10 +9,11 @@ const meta = {
     invoices: 1,
   },
   parameters: {
+    theme: 'dark',
     backgrounds: { default: 'dark' },
     docs: {
       description: {
-        component: 'A filter component',
+        component: 'Header component.',
       }
     }
   },

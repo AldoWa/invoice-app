@@ -18,6 +18,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof FilterByStatus>;
 
-export const Filter: Story = {
+export const Default: Story = {
   render: () => <FilterByStatus onInputChange={() => {}}/>
 };

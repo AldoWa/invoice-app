@@ -8,7 +8,7 @@ const meta = {
     backgrounds: { default: 'dark' },
     docs: {
       description: {
-        component: 'A select component with light/dark mode.',
+        component: 'A data picker component with light/dark mode.',
       }
     }
   },
@@ -17,6 +17,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof DateComponent>;
 
-export const Date: Story = {
+export const Default: Story = {
   render: () => <DateComponent />
 };

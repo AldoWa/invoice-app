@@ -9,7 +9,7 @@ const meta = {
     layout: 'fullscreen',
     docs: {
       description: {
-        component: 'A select component with light/dark mode.',
+        component: 'Home page of the application',
       }
     }
   },
