@@ -4,6 +4,14 @@ import { InvoiceItem } from './Item';
 const meta = {
   title: 'Components/Invoice/Item',
   component: InvoiceItem,
+  argTypes: {
+    status: {
+      control: {
+        type: 'select',
+        options: ['pending', 'paid', 'draft']
+      }
+    }
+  },
   parameters: {
     backgrounds: { default: 'dark' },
     docs: {

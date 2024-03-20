@@ -41,7 +41,7 @@ function Themes() {
 
 export function Navbar() {
   return (
-    <nav className=" bg-invoice-03 lg:max-w-[103px] flex lg:flex-col justify-between lg:rounded-r-[20px] lg:h-screen lg:w-28 w-screen">
+    <nav className=" bg-invoice-03 lg:max-w-[103px] flex lg:flex-col justify-between lg:rounded-r-[20px] lg:h-screen lg:w-28 ">
       <LogoComponent />
       <div className="flex lg:block gap-8">
         <Themes />
