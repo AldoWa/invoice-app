@@ -94,7 +94,7 @@ export function InvoiceItem({
           alt="Go to the invoice page"
           width={4}
           height={8}
-          className="h-2 md:block invisible"
+          className="h-2 md:block invisible md:visible"
         />
       </div>
     </li>

@@ -4,6 +4,7 @@ import { Filter } from "../Filter"
 interface HeaderHomeProps {
   invoices: number
   filterStatus: 'draft' | 'pending' | 'paid' | 'all'
+  onClickNewInvoice: () => void
 }
 
 const filterText = {
@@ -13,7 +14,7 @@ const filterText = {
   all: 'total'
 }
 
-const HeaderHome = ({ invoices, filterStatus }: HeaderHomeProps ) => {
+const HeaderHome = ({ invoices, filterStatus, onClickNewInvoice }: HeaderHomeProps ) => {
   return (
     <header className="flex justify-between flex-wrap">
       <div>
@@ -22,7 +23,7 @@ const HeaderHome = ({ invoices, filterStatus }: HeaderHomeProps ) => {
       </div>
       <div className="flex items-center mt-4 sm:mt-0 flex-wrap md:flex-nowrap gap-5 md:gap-10">
         <Filter onInputChange={() => {}}/>
-        <Button variant='default'>New Invoice</Button>
+        <Button variant='default' onClick={onClickNewInvoice}>New Invoice</Button>
       </div>
     </header>
   )
