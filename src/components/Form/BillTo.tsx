@@ -1,12 +1,16 @@
 import { Input } from "../Input"
 import { InputContainer } from "./InputContainer"
 
-const BillFrom = () => {
+const BillTo = () => {
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-invoice-01 font-bold text-[0.9375rem] leading-[0.9375rem] tracking-widest">Bill from</h2>
-      <InputContainer label="Street Address" id="street">
-        <Input id="street"/>
+      <h2 className="text-invoice-01 font-bold text-[0.9375rem] leading-[0.9375rem] tracking-widest">Bill To</h2>
+      <InputContainer label="Client's Name" id="client-name" >
+        <Input id="client-name"/>
+      </InputContainer>
+
+      <InputContainer label="Client's Email" id="client-email">
+        <Input id="client-email"/>
       </InputContainer>
       
       <div className="flex gap-6">
@@ -24,4 +28,4 @@ const BillFrom = () => {
   )
 }
 
-export { BillFrom }
+export { BillTo }

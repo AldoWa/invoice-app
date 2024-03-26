@@ -1,6 +1,15 @@
+import { BillFrom } from "./BillFrom"
+import { BillTo } from "./BillTo"
+import { ItemList } from "./ItemList"
+
+
 function Form(){
   return (
-    <h1>Form</h1>
+    <form className="flex flex-col gap-8">
+      <BillTo></BillTo>
+      <BillFrom></BillFrom>
+      <ItemList></ItemList>
+    </form>
   )
 }
 

@@ -1,26 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Form  } from '..';
+
+import { BillTo } from '../BillTo';
 
 const meta = {
   title: 'Components/Form',
-  component: Form,
+  component: BillTo,
   parameters: {
     theme: 'dark',
     backgrounds: { default: 'dark' },
     docs: {
       description: {
-        component: 'Principal Form component.',
+        component: 'Bill To Component',
       }
     }
   },
-} satisfies Meta<typeof Form>;
+} satisfies Meta<typeof BillTo>;
 
 export default meta;
-type Story = StoryObj<typeof Form>;
+type Story = StoryObj<typeof BillTo>;
 
-export const Principal: Story = {
+export const BillToForm: Story = {
   render: () => <div className='container mx-auto max-w-[504px]'>
-    <Form 
-    />
+    <BillTo />
   </div>
 };

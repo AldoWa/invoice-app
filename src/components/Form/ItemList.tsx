@@ -5,7 +5,7 @@ import DeleteIcon from '@/assets/icon-delete.svg'
 import { Button } from "../Button";
 import { useState } from "react";
 
-type ItemListProps = {
+type Items = {
   itemNome: string;
   qty: number;
   price: number;
@@ -13,7 +13,7 @@ type ItemListProps = {
 }
 
 function ItemList() {
-  const [items, setItems] = useState<ItemListProps[]>([])
+  const [items, setItems] = useState<Items[]>([])
 
   function createItem(){
     setItems(items => [...items, {
@@ -30,7 +30,8 @@ function ItemList() {
   }
   
   return (
-    <>
+    <div className="flex flex-col gap-4">
+      <h2 className="leading-8 text-lg text-[#777F98] font-bold">Item List</h2>
       <table>
         <thead >
           <tr>
@@ -81,10 +82,11 @@ function ItemList() {
         variant='addNewItem'
         className="mt-[1.5rem] w-full"
         onClick={createItem}
+        type="button"
       >
         + Add New Item
       </Button>
-    </>
+    </div>
   );
 }
 
