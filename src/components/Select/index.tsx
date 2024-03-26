@@ -14,7 +14,7 @@ const controlStyles = {
 const menuStyles = `mt-6 border border-white bg-white dark:bg-invoice-04 dark:border-invoice-04 rounded-lg ${fontBase} drop-shadow-sm`;
 
 const optionStyles = {
-  base: "hover:cursor-pointer px-5 pt-[18px] pb-[15px] last:border-t last:border-invoice-05 dark:text-invoice-05 dark:last:border-invoice-03",
+  base: "hover:cursor-pointer px-5 pt-[18px] pb-[15px] [&:not(:first-child)]:border-t [&:not(:first-child)]:border-invoice-05 dark:text-invoice-05 dark:[&:not(:first-child)]:border-invoice-03",
   focus: "light:active:text-invoice-01 dark:active:text-invoice-02",
   selected: "text-invoice-01 dark:text-invoice-02",
 };
