@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ItemList as ItemListComponent } from './ItemList';
+import { ItemList as ItemListComponent } from '../ItemList';
 
 const meta = {
   title: 'Components/Form',

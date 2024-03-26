@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {  InputContainer } from './InputContainer';
+import {  InputContainer } from '../InputContainer';
 
-import { Input } from '../Input';
+import { Input } from '../../Input';
 
-import { DateComponent } from '../DataPicker';
+import { DateComponent } from '../../DataPicker';
 
-import { Select } from '../Select';
+import { Select } from '../../Select';
 
 const meta = {
   title: 'Components/Form',
@@ -15,7 +15,7 @@ const meta = {
     backgrounds: { default: 'dark' },
     docs: {
       description: {
-        component: 'Form component.',
+        component: 'InputContainer component.',
       }
     }
   },
