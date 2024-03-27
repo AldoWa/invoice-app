@@ -47,7 +47,9 @@ export const DatePickerWithLabel: Story = {
     <InputContainer
       {...props}
     >
-      <DateComponent />
+      <DateComponent
+        onChange={() => {}}
+      />
     </InputContainer>
   </div>
 };

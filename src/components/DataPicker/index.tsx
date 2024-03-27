@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from "react";
-import DatePicker, { registerLocale } from "react-datepicker";
+import DatePicker, { ReactDatePickerProps, registerLocale } from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -9,11 +9,12 @@ import { InputProps } from "../Input";
 import IconCalendar from "@/assets/icon-calendar.svg";
 import Image from "next/image";
 
+type DateComponentProps = {} & ReactDatePickerProps;
 
 registerLocale("ptBR", ptBR);
 
 const InputWithIcon = forwardRef<HTMLInputElement, InputProps>(
-  ({ value, onClick }, ref) => (
+  ({ value, onClick, onChange }, ref) => (
     <div>
       <input
         className="px-5 pt-[18px] pb-[15px] border border-invoice-05 rounded-[4px]  focus:ring-1 focus:ring-invoice-01 
@@ -21,6 +22,7 @@ const InputWithIcon = forwardRef<HTMLInputElement, InputProps>(
         onClick={onClick}
         ref={ref}
         value={value}
+        onChange={onChange}
       />
       <Image 
         src={IconCalendar}
@@ -35,12 +37,21 @@ const InputWithIcon = forwardRef<HTMLInputElement, InputProps>(
 
 InputWithIcon.displayName = "CustomInput";
 
-export const DateComponent = () => {
+export const DateComponent = (props: DateComponentProps) => {
   const [startDate, setStartDate] = useState(new Date());
+
+  function onChangeDateComponent(date: Date, event: React.SyntheticEvent<any>){
+    if(date) {
+      setStartDate(date)
+    }
+    props.onChange(date, event)
+  }
+
   return (
     <DatePicker
+      {...props}
       selected={startDate}
-      onChange={(date) => date && setStartDate(date)}
+      onChange={onChangeDateComponent}
       minDate={new Date()}
       customInput={<InputWithIcon />}
       dayClassName={() =>
@@ -49,7 +60,6 @@ export const DateComponent = () => {
       locale="ptBR"
       dateFormat="dd MMM YYYY"
       calendarClassName="bg-white dark:bg-invoice-03 border border-invoice-05 dark:border-invoice-04 rounded-[4px] text-invoice-08 dark:text-white"
-      className=""
     />
   );
 };

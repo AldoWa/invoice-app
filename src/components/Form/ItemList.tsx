@@ -35,10 +35,10 @@ function ItemList() {
       <table>
         <thead >
           <tr>
-            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] min-w-[232px]">Item nome</th>
-            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] min-w-[73px]">Qty.</th>
-            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] min-w-[100px]">Price</th>
-            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] min-w-[56px]">Total</th>
+            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] w-[232px]">Item nome</th>
+            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] w-[73px]">Qty.</th>
+            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] w-[100px]">Price</th>
+            <th className="text-start text-invoice-07 dark:text-invoice-05 tracking-tighter text-[0.8125rem] leading-[0.9375rem] w-[56px]">Total</th>
             <th></th>
           </tr>
         </thead>
