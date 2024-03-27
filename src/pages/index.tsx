@@ -40,7 +40,9 @@ export default function Home() {
         />
       </ul>
       <Modal activeModal={activeModalNewInvoice} closeModal={handleModalNewInvoice}>
-        <Form></Form>
+        <Form
+          onDiscard={handleModalNewInvoice}
+        ></Form>
       </Modal>
     </main>
   )

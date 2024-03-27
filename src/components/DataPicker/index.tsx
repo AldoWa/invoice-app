@@ -57,6 +57,7 @@ export const DateComponent = (props: DateComponentProps) => {
       dayClassName={() =>
         "text-[0.9375rem] leading-[0.9375rem] tracking-widest font-bold"
       }
+      wrapperClassName="w-full"
       locale="ptBR"
       dateFormat="dd MMM YYYY"
       calendarClassName="bg-white dark:bg-invoice-03 border border-invoice-05 dark:border-invoice-04 rounded-[4px] text-invoice-08 dark:text-white"

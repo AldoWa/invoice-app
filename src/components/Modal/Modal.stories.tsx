@@ -42,7 +42,9 @@ export const Principal: Story = {
         <Modal 
           {...props}
         >
-          <Form />
+          <Form 
+            onDiscard={fn()}
+          />
         </Modal>
       </div>
     )

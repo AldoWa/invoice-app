@@ -12,12 +12,16 @@ const DetailsInvoice = () => {
         </InputContainer>
         <InputContainer id="payment-terms" label="Payment Terms" className="flex-1">
           <Select
+            value={{
+              value: '1',
+              label: 'Net 1 Day',
+            }}
             id="payment-terms"
             instanceId="payment-terms"
             options={[
               {
                 value: '1',
-                label: 'Net 1 Day'
+                label: 'Net 1 Day',
               },
               {
                 value: '7',
