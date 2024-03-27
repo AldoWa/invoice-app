@@ -6,12 +6,14 @@ import { InputContainer } from "./InputContainer"
 const DetailsInvoice = () => {
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         <InputContainer id="invoice-date" label="Invoice Date" className="flex-1">
           <DateComponent onChange={() => {}} id="invoice-date"/>
         </InputContainer>
         <InputContainer id="payment-terms" label="Payment Terms" className="flex-1">
-          <Select 
+          <Select
+            id="payment-terms"
+            instanceId="payment-terms"
             options={[
               {
                 value: '1',

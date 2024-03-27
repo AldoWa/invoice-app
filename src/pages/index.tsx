@@ -1,3 +1,4 @@
+import { Form } from "@/components/Form";
 import { HeaderHome } from "@/components/Header/HeaderHome";
 import { InvoiceItem } from "@/components/Invoice/Item";
 import { Modal } from "@/components/Modal";
@@ -39,7 +40,7 @@ export default function Home() {
         />
       </ul>
       <Modal activeModal={activeModalNewInvoice} closeModal={handleModalNewInvoice}>
-        Modal
+        <Form></Form>
       </Modal>
     </main>
   )

@@ -13,7 +13,7 @@ const BillTo = () => {
         <Input id="client-email"/>
       </InputContainer>
       
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6 ">
         <InputContainer label="City" id="city">
           <Input id="city"/>
         </InputContainer>

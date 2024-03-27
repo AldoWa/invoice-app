@@ -12,7 +12,7 @@ const buttonVariants = cva(
         edit: 'text-invoice-07 bg-[#F9FAFE] dark:bg-[#373B53] dark:text-invoice-05 hover:bg-[#DFE3FA] dark:hover:bg-white',
         draft: 'text-invoice-06 bg-[#373B53] dark:text-invoice-05 hover:bg-invoice-08 dark:hover:bg-invoice-03',
         delete: 'text-white bg-invoice-09 hover:bg-invoice-10',
-        addNewItem: 'text-invoice-07 bg-[#DFE3FA] w-full min-w-[350px] dark:bg-invoice-04 dark:text-invoice-05',
+        addNewItem: 'text-invoice-07 bg-[#DFE3FA] w-full md:min-w-[350px] dark:bg-invoice-04 dark:text-invoice-05',
       },
     },
     defaultVariants: {
