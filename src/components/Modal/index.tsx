@@ -16,7 +16,7 @@ function Modal({ children, activeModal, closeModal }: ModalProps) {
     `}
       ref={modalRef}
     >
-      <div className="bg-white w-full md:max-w-[720px] h-full md:rounded-r-[20px] dark:bg-invoice-dark">
+      <div className="bg-white w-full md:max-w-[720px] h-full md:rounded-r-[20px] dark:bg-invoice-dark overflow-auto">
         <div className="pl-14 pt-[33px] md:pt-[59px] lg:pl-[159px] lg:pt-16 pr-14 pb-8 ">
           { children } 
         </div>

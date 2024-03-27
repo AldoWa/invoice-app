@@ -3,6 +3,7 @@ import { Modal } from '.';
 import { Navbar } from '../Navbar';
 
 import { fn } from '@storybook/test';
+import { Form } from '../Form';
 
 const meta = {
   title: 'Components/Modal',
@@ -41,7 +42,7 @@ export const Principal: Story = {
         <Modal 
           {...props}
         >
-          Active
+          <Form />
         </Modal>
       </div>
     )
